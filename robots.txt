@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /preview/
+Disallow: /test/
+
+Sitemap: https://minimusetools.com/sitemap.xml

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "kitbitz-cloud-wide",
+    "file": "/starter-assets/kitbitz/cloud-wide.png",
+    "category": "BackgroundElement",
+    "sourcePath": "kits/nature-kit/CloudBasic-Water-H-M-SlateWhite@2x.png",
+    "sourceUrl": "https://raw.githubusercontent.com/CaptExcellent/kits-library-assets/c67532ddf21cef61827de203344282cc9c2cecae/kits/nature-kit/CloudBasic-Water-H-M-SlateWhite%402x.png",
+    "sourceCommit": "c67532ddf21cef61827de203344282cc9c2cecae",
+    "author": "Kits Library / CaptExcellent",
+    "license": "CC0-1.0",
+    "licenseFile": "/starter-assets/kitbitz/LICENSE.md",
+    "sha256": "dbd62fc9226e405349d021b7f47486fe1684633d99187888d0e3d88d5f4429ec",
+    "reviewStatus": "needs-preparation",
+    "style": "cartoon",
+    "provenance": "library",
+    "width": 1354,
+    "height": 1168,
+    "hasAlpha": true,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "id": "kitbitz-cloud-small",
+    "file": "/starter-assets/kitbitz/cloud-small.png",
+    "category": "BackgroundElement",
+    "sourcePath": "kits/nature-kit/CloudBasic-Water-H-S-SlateWhite@2x.png",
+    "sourceUrl": "https://raw.githubusercontent.com/CaptExcellent/kits-library-assets/c67532ddf21cef61827de203344282cc9c2cecae/kits/nature-kit/CloudBasic-Water-H-S-SlateWhite%402x.png",
+    "sourceCommit": "c67532ddf21cef61827de203344282cc9c2cecae",
+    "author": "Kits Library / CaptExcellent",
+    "license": "CC0-1.0",
+    "licenseFile": "/starter-assets/kitbitz/LICENSE.md",
+    "sha256": "e1152bd4a8681a323bde5add8c5ea1ba94937248acc63e99f2560bc4ac1302ad",
+    "reviewStatus": "needs-preparation",
+    "style": "cartoon",
+    "provenance": "library",
+    "width": 1046,
+    "height": 1028,
+    "hasAlpha": true,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "id": "kitbitz-mountain",
+    "file": "/starter-assets/kitbitz/mountain.png",
+    "category": "BackgroundElement",
+    "sourcePath": "kits/nature-kit/Mountain 1.png",
+    "sourceUrl": "https://raw.githubusercontent.com/CaptExcellent/kits-library-assets/c67532ddf21cef61827de203344282cc9c2cecae/kits/nature-kit/Mountain%201.png",
+    "sourceCommit": "c67532ddf21cef61827de203344282cc9c2cecae",
+    "author": "Kits Library / CaptExcellent",
+    "license": "CC0-1.0",
+    "licenseFile": "/starter-assets/kitbitz/LICENSE.md",
+    "sha256": "6b789ad8139af345529725cfd6ca27740b6c053a3bab5ebafa0701e3fb1b8d79",
+    "reviewStatus": "candidate",
+    "style": "cartoon",
+    "provenance": "library",
+    "width": 3252,
+    "height": 2832,
+    "hasAlpha": true,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "id": "kitbitz-pirate-hat",
+    "file": "/starter-assets/kitbitz/pirate-hat.png",
+    "category": "HairAccessory",
+    "sourcePath": "kits/pirate-kit/PirateHat-Textile-V-S-Stone700@2x.png",
+    "sourceUrl": "https://raw.githubusercontent.com/CaptExcellent/kits-library-assets/c67532ddf21cef61827de203344282cc9c2cecae/kits/pirate-kit/PirateHat-Textile-V-S-Stone700%402x.png",
+    "sourceCommit": "c67532ddf21cef61827de203344282cc9c2cecae",
+    "author": "Kits Library / CaptExcellent",
+    "license": "CC0-1.0",
+    "licenseFile": "/starter-assets/kitbitz/LICENSE.md",
+    "sha256": "2e073a2183b8a99a35c232b7b6779e5e60c23bfa25c30939514fd47c2ccaba3f",
+    "reviewStatus": "approved",
+    "style": "cartoon",
+    "provenance": "library",
+    "width": 473,
+    "height": 257,
+    "hasAlpha": true,
+    "alphaRange": [
+      0,
+      255
+    ]
+  }
+]
