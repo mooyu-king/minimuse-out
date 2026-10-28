@@ -1,2 +1,2 @@
 :HL["/_next/static/chunks/1exp7e8debpyc.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"slug","param":{"type":"c","key":"help","siblings":["asset-studio","dressmaker-game"]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"nTromNjn4OHl9Ua7fPKmL"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"slug","param":{"type":"c","key":"help","siblings":["asset-studio","dressmaker-game"]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"6xWbnNehO6W4XbWwM4XBY"}
