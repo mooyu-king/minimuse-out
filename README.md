@@ -1,129 +1,59 @@
-# MiniMuse Tools · 图片编辑与素材工作台
+# MiniMuse Tools
 
-<p align="center">
-  <img src="./minimuse-logo.webp" alt="MiniMuse 标志" width="220" />
-</p>
+[Open MiniMuse Tools](https://minimusetools.com/)
 
-<p align="center">
-  <a href="https://minimusetools.com/">访问网站</a> ·
-  <a href="https://minimusetools.com/asset-studio/?mode=edit">上传图片并编辑</a> ·
-  <a href="https://minimusetools.com/asset-studio/?mode=create">体验素材创作</a>
-</p>
+MiniMuse Tools is an independent browser workspace for people who want to repair images, prepare custom assets and arrange visual ideas. It is useful when you already have an image and want to change one part of it, not only when you want to create an entire character composition. Start with an uploaded image, work on a manageable adjustment, and save the result that suits your next step.
 
-MiniMuse Tools 是面向 MiniMuse 玩家和 OC 创作者的独立浏览器工具。核心是**编辑和修复用户上传的图片**：处理背景、局部换色、调整服饰与发饰素材、组合图层，再下载单件或完整效果图。也提供少量原创及许可素材用于创作。
+![MiniMuse Tools logo](minimuse-logo.webp)
 
-本仓库保存网站的 **out 静态构建产物**，用于 Cloudflare Workers Static Assets 部署。
+## Begin with the image you have
 
-## 网站与常用入口
+The [Asset Studio](https://minimusetools.com/asset-studio/) brings editing and composition into one workspace. The editing entrance is appropriate for cleaning a background or repairing a small area. The creation entrance provides a different starting point for working with the available assets. Neither requires you to finish a complete character before you can obtain something useful.
 
-| 入口 | 地址 |
-|---|---|
-| 正式网站 | https://minimusetools.com/ |
-| 完整工作台 | https://minimusetools.com/asset-studio/ |
-| Quick Edit | https://minimusetools.com/tools/custom-asset-prep/ |
-| 去白底教程 | https://minimusetools.com/guides/remove-white-background/ |
-| 自定义服饰 | https://minimusetools.com/guides/custom-clothes/ |
-| 自定义头发 | https://minimusetools.com/guides/custom-hair/ |
-| 素材导入指南 | https://minimusetools.com/guides/how-to-import-custom-assets/ |
-| 官方游戏下载入口 | https://minimusetools.com/download/ |
-| GitHub 静态仓库 | https://github.com/mooyu-king/minimuse-out |
+A sensible first task is removing a simple background from a single accessory. Keep the original image available, make one change, and compare the result before continuing. This makes it easier to distinguish a successful repair from an accidental loss of detail. An image with a complex background will generally require more careful manual attention than one with a uniform background.
 
-## 图片修复：从一处修改开始
+![Original bow illustration before background repair](images/repair-before.svg)
 
-<p align="center">
-  <img src="./images/repair-before.svg" alt="修复前：原创蝴蝶结带白色背景" width="260" />
-  <img src="./images/repair-after.svg" alt="修复后：原创蝴蝶结在透明棋盘格预览中" width="260" />
-</p>
+![Original bow illustration after background repair](images/repair-after.svg)
 
-*原创示意图：棋盘格用于表示透明预览，不会写入导出的透明 PNG。*
+These illustrations show the idea of a background repair. The checkerboard represents transparency in a preview; it is not intended to become part of a transparent exported image. Inspect your own result against more than one background, because a pale edge that disappears on white may still be visible against a darker color.
 
-- 移除纯色或接近纯色的背景，调节颜色容差。
-- 检查透明区域、空白边距与疑似白边，调整羽化和边缘修复。
-- 使用轮廓、魔棒、选区画笔及擦除／恢复进行手动修正。
-- 针对局部调整颜色，使用 Before/After 和不同背景检查结果。
+## Clean edges carefully
 
-复杂背景需要手动处理；工具不会自动识别全部角色部件，也不会补全被衣服或发饰遮挡的像素。
+Background removal is only the beginning of preparing an asset. Check narrow gaps, fine details and the outer edge of the shape. Color tolerance can affect nearby colors as well as the area you intended to remove. Work gradually when the subject contains colors similar to the background, and use the manual selection and repair controls where an automatic pass is not enough.
 
-## 图层组合：服饰、发饰与背景
+The workspace includes ways to select, erase, restore and adjust parts of an image. Use the before-and-after view to judge whether the edit improved the asset. Background cleanup does not reconstruct hidden body parts or reveal pixels that were never present in the source. If clothing or hair covers an area, removing it cannot recover an authentic underlying drawing.
 
-<p align="center">
-  <img src="./starter-assets/original/top-thumb.png" alt="可独立编辑的原创上衣示例" width="150" />
-  <img src="./starter-assets/original/bow-thumb.png" alt="可独立定位的原创发饰示例" width="150" />
-  <img src="./starter-assets/original/garden-thumb.png" alt="可用于组合的原创背景示例" width="150" />
-</p>
+## Arrange independent layers
 
-*以上为本站原创素材示例，并非从游戏中提取的部件。*
+Separate images can be positioned as layers, allowing you to move, scale, rotate, flip and reorder them. This is useful for testing an accessory with different clothing or comparing a foreground element against several backgrounds. Visibility and opacity adjustments help you inspect a composition without discarding the underlying material.
 
-上传独立 PNG 后可以移动、缩放、旋转、翻转和排序，调整显示状态与透明度。配色可保存为变体，图层可组合成完整效果图。参考轮廓仅用于对齐，不进入导出。
+![Original top asset example](starter-assets/original/top-thumb.png)
 
-创作只是入口之一：无需完成整个角色，修改好一张素材即可下载。
+![Original bow accessory example](starter-assets/original/bow-thumb.png)
 
-## 导出与本地项目
+![Original garden background example](starter-assets/original/garden-thumb.png)
 
-| 输出 | 用途 |
-|---|---|
-| 单件 PNG | 保存一张处理后的素材 |
-| 完整 PNG / JPG | 保存组合后的平面效果图 |
-| 素材 ZIP | 整理独立素材、说明和必要的来源信息 |
-| .mmstudio 项目备份 | 保存可继续编辑的图层、源图与设置 |
+The examples above are original starter materials from the website, not character parts extracted from the game. Treat each as an editable visual element. A reference outline can help with alignment, but it is a guide rather than part of the finished export. Check the final view rather than assuming every visible workspace aid will be included.
 
-图片处理在浏览器本地完成。设备自动保存可选，项目备份由用户主动下载。清理浏览器数据可能删除设备保存的项目；不同域名的设备存储不共享。
+## Choose the right output
 
-ZIP 是素材整理包，**不是 MiniMuse 官方游戏安装包或角色格式**。解压后在游戏中逐项导入 PNG，并重新检查位置与大小。合成整图不会自动变成游戏内可编辑角色。
+A single PNG is useful when you need one cleaned or recolored asset. A complete PNG or JPG is more appropriate when you want a flattened view of the composition. These serve different purposes: a finished picture does not preserve the same independent editing possibilities as a project with separate layers.
 
-网站加载访问统计和可选播放的 YouTube 视频，详见 [隐私政策](https://minimusetools.com/privacy/)。编辑器不将用户选择的图片或项目内容附加到统计事件中。
+An asset ZIP groups materials and accompanying information. It is not an official MiniMuse game package or a ready-made editable character format. When taking individual assets into the game, follow the relevant guide and check their position and scale there. A composition that looks aligned in this workspace may still need adjustment in a different environment.
 
-## 本地构建：保留 .git 与 README
+The .mmstudio project backup is intended for continuing work in the studio. Keep a backup before making a substantial change or clearing browser data. Optional device saving and a deliberately downloaded project backup are not the same thing. Browser storage can be removed, and data saved on one domain is not automatically available on another.
 
-在源码项目目录执行，不能在本静态仓库中运行 Next.js 构建：
+## Work in small, reversible steps
 
-```powershell
-Set-Location 'D:\03_website\20-minimuse'
-$env:npm_config_cache = 'D:\99_tool\npm-cache'
-$env:TEMP = 'D:\99_tool\temp'
-$env:TMP = 'D:\99_tool\tmp'
-npm run build-preserve-git
-if ($LASTEXITCODE -ne 0) { throw '构建失败，停止发布。' }
-Test-Path '.\out\.git'
-Test-Path '.\out\README.md'
-```
+For a first session, choose one accessory and one clear objective. Remove a background, inspect the edge, try a color variation and export the individual asset. Once that process feels familiar, combine two or three layers. A smaller project makes it easier to understand whether a problem comes from the source image, the selection or the arrangement.
 
-脚本会先备份 out 下已有的 `.git` 和 README 文件，构建完成后恢复；构建报错也会尝试恢复。README 名称不区分大小写，可带扩展名。恢复失败会返回失败状态并保留项目内备份供检查。
+When comparing color choices, consider the entire composition rather than a single swatch. An accessory may look very different against light hair, dark clothing or a detailed background. Use the preview to test those relationships, and retain the source material so that an experimental recoloring does not become your only remaining version.
 
-不要手动删除 out，也不要用普通 `npm run build` 替代保留构建命令。首次不存在的 `.git` 或 README 不会凭空由保留逻辑生成。恢复机制不代表整份旧网站构建产物都已备份。
+## Privacy, ownership and help
 
-## GitHub → Cloudflare Workers 发布
+Image processing takes place in the browser. The website also has visitor information about analytics and optional video content, so consult the [Privacy Policy](https://minimusetools.com/privacy/) for the wider site context. Avoid putting sensitive material into shared-device projects, and remember that someone else using the same browser profile may encounter locally retained work.
 
-完成构建后检查 Git 根目录与远端：
+Only use materials you are entitled to edit and share. A tool that makes an edit possible does not grant permission to redistribute someone else's artwork. Keep useful source and license information with assets that need attribution. The site's guides explain common asset-preparation tasks, while its contact page provides a way to report an unclear instruction or an unexpected result.
 
-```powershell
-Set-Location 'D:\03_website\20-minimuse\out'
-git rev-parse --show-toplevel
-git remote -v
-git status --short
-```
-
-Git 根目录应以 `/20-minimuse/out` 结尾，origin 应指向 `mooyu-king/minimuse-out`。确认后提交发布：
-
-```powershell
-git add -A
-git diff --cached --stat
-git commit -m "Update MiniMuse Tools"
-git push origin main
-```
-
-每条命令失败先处理，不强制覆盖远端历史。没有改动则无需新建提交。
-
-本项目使用 Worker `minimuse-out`，Git 集成应连接本仓库 main 分支。仓库根目录已是静态文件，云端不需要再次编译 Next.js。根据实际部署配置，将仓库根目录作为静态资源目录。确认 GitHub 提交 SHA 对应的 Worker 部署成功后，再检查正式网站。
-
-Worker 测试地址以控制台实际显示为准。正式域名通过 Worker 的自定义域绑定；Spaceship 负责注册续费，Cloudflare 管理 DNS 与 HTTPS。日常更新不需要再次修改名称服务器。
-
-## 署名、许可与联系
-
-MiniMuse Tools 不是 Studio Sirenia 官方产品，不代表官方背书。MiniMuse 名称与标志归其权利人所有，在此用于识别相关游戏，不作为可导出素材提供。
-
-用户仅应处理自己原创或有权使用的图片。素材库文件遵循各自许可证；不能将某些素材的 CC0 声明理解为整个网站或 MiniMuse 标志均属于 CC0。
-
-[About Us](https://minimusetools.com/about/) · [Privacy Policy](https://minimusetools.com/privacy/) · [Contact](https://minimusetools.com/contact/) · [Terms of Service](https://minimusetools.com/terms/) · [Copyright](https://minimusetools.com/copyright/)
-
-联系邮箱：mooyuking@gmail.com
+[Visit the workspace](https://minimusetools.com/asset-studio/) and begin with one practical improvement to an image you already have.
