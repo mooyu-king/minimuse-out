@@ -1,2 +1,2 @@
-:HL["/_next/static/css/c9cdaf4e7b70c275.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"slug","param":{"type":"c","key":"guides/studio-mode","siblings":["_not-found","_global-error","asset-studio","dressmaker-game","icon.png","robots.txt","sitemap.xml"]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"54wJpBG88552-8kxFOH_5"}
+:HL["/_next/static/chunks/3aw84df_7hruc.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"slug","param":{"type":"c","key":"guides/studio-mode","siblings":["asset-studio","dressmaker-game"]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"TQ_tYKuJ6mtoI9_BN7qnT"}
